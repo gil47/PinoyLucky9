@@ -1,7 +1,7 @@
 package lucky9Gui;
 
 /*
-Originally made by:
+Created by:
 Guiller B. Apan 
 2015
 */
@@ -57,9 +57,9 @@ public class GuiLucky9 extends JFrame implements ActionListener{
         }
         
         public GuiLucky9() {
-                loadImages();
-                setUp();
-                playGame();
+            loadImages();
+            setUp();
+            playGame();
         }
 
         public final void setUp() {
@@ -78,6 +78,7 @@ public class GuiLucky9 extends JFrame implements ActionListener{
             titlePanel.setBorder(BorderFactory.createLineBorder( new Color(153,51,0), 2) ); 
             add(titlePanel, BorderLayout.NORTH);
 
+	    //Player's Panel (Left)
             pPanel =new JPanel();
             pPanel.setLayout(new GridLayout(2,1));
             pPanel.setBackground(new Color(153,51,0));
@@ -94,7 +95,7 @@ public class GuiLucky9 extends JFrame implements ActionListener{
             pPanel.setBorder(BorderFactory.createLineBorder( new Color(153,51,0), 3) );
             add(pPanel, BorderLayout.WEST);
 
-            //Dealer
+            //Dealer's Panel (Right)
             dPanel =new JPanel();
             dPanel.setLayout(new GridLayout(2,1));
             dPanel.setBackground(new Color(134,45,0));
@@ -163,8 +164,6 @@ public class GuiLucky9 extends JFrame implements ActionListener{
                 }
             }	   
         }
-
-
         @Override
         public void actionPerformed(ActionEvent evt) {
             if (evt.getActionCommand().equals("DEAL")){
