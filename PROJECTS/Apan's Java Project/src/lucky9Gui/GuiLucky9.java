@@ -3,8 +3,6 @@ package lucky9Gui;
 /*
 Originally made by:
 Guiller B. Apan 
-BS Computer Science  
-Trimex Colleges, Laguna
 2015
 */
 
